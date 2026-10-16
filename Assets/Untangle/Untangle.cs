@@ -383,7 +383,7 @@ public class Untangle : MonoBehaviour {
 				PegGrid[ReverseLookup(i)].OnInteract();
 				yield return new WaitForSeconds(0.2f);
 				if (ModuleSolved) {
-					yield return new WaitForSeconds(5f);
+					yield return "solve";
 					yield break;
 				}
 			}
